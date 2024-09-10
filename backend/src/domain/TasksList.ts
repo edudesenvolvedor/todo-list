@@ -5,7 +5,7 @@ export default class TasksList {
     this.title = title;
   }
 
-  public alterTitle(title: string): void {
+  public changeTitle(title: string): void {
     if (!title.length) {
       this.title = 'New Tasks List';
       return;
