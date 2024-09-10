@@ -11,4 +11,11 @@ describe('Task', () => {
     sut.changeTitle('new_title');
     expect(sut.getTitle()).toEqual('new_title');
   });
+
+  it('the title should not be empty', () => {
+    const sut = new Task('any_task');
+    sut.changeTitle('');
+    expect(sut.getTitle()).not.toEqual('');
+    expect(sut.getTitle()).toEqual('New Task');
+  });
 });
