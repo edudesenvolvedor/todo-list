@@ -6,6 +6,10 @@ export default class Task {
   }
 
   public changeTitle(title: string) {
+    if (!title.length) {
+      this.title = 'New Task';
+      return;
+    }
     this.title = title;
   }
 
