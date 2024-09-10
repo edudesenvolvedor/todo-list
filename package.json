@@ -1,0 +1,23 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edudesenvolvedor/todo-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edudesenvolvedor/todo-list/issues"
+  },
+  "homepage": "https://github.com/edudesenvolvedor/todo-list#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^5.0.8"
+  }
+}
