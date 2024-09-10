@@ -1,5 +1,8 @@
+import type Task from './Task';
+
 export default class TasksList {
-  title: string;
+  private title: string;
+  private list: Task[] = [];
 
   constructor(title: string) {
     this.title = title;
@@ -13,7 +16,15 @@ export default class TasksList {
     this.title = title;
   }
 
+  public addTask(task: Task): void {
+    this.list.push(task);
+  }
+
   public getTitle(): string {
     return this.title;
+  }
+
+  public getList(): Task[] {
+    return this.list;
   }
 }
