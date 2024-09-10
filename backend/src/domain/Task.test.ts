@@ -18,4 +18,10 @@ describe('Task', () => {
     expect(sut.getTitle()).not.toEqual('');
     expect(sut.getTitle()).toEqual('New Task');
   });
+
+  it('should not be longer than 50 characters', () => {
+    expect(() => {
+      const sut = new Task('a'.repeat(60));
+    }).toThrow('Title with more than 50 characters');
+  });
 });
